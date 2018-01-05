@@ -261,7 +261,7 @@
 
 </div>
 
-    <a data-url="http://xiaobocser.github.io/2018/01/05/hello-world/" data-id="cjc1qx8g80002qgobaldixmct" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://xiaobocser.github.io/2018/01/05/hello-world/" data-id="cjc1r0vn400063zobyhgpyysp" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -340,7 +340,7 @@
 
 
 
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-diary" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -348,7 +348,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/01/05/test/">晨间日记</a>
+            <a class="article-title" href="/2018/01/05/diary/">晨间日记</a>
         </h1>
     
 
@@ -357,7 +357,7 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/01/05/test/">
+        <a href="/2018/01/05/diary/">
             <time datetime="2018-01-05T09:18:42.000Z" itemprop="datePublished">2018-01-05</time>
         </a>
     </div>
@@ -398,7 +398,7 @@
 <li>昨天的不足是<br><strong> 每天向前走一步，Think Big Do Small       </strong></li>
 </ul></p>
             <p class="article-more-link">
-                <a href="/2018/01/05/test/#more">Read More</a>
+                <a href="/2018/01/05/diary/#more">Read More</a>
             </p>
         
         </div>
@@ -409,7 +409,7 @@
 
 </div>
 
-    <a data-url="http://xiaobocser.github.io/2018/01/05/test/" data-id="cjc1qx8ge0006qgobzponmktv" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://xiaobocser.github.io/2018/01/05/diary/" data-id="cjc1r0vmn00003zobkmtrkpv4" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -477,7 +477,7 @@
 
             
     
-        <a href="http://xiaobocser.github.io/2018/01/05/test/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://xiaobocser.github.io/2018/01/05/test/">Comments</a>
+        <a href="http://xiaobocser.github.io/2018/01/05/diary/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://xiaobocser.github.io/2018/01/05/diary/">Comments</a>
     
 
         </footer>
@@ -553,7 +553,7 @@
 
 </div>
 
-    <a data-url="http://xiaobocser.github.io/2018/01/05/hello-markdown/" data-id="cjc1qx8g20000qgobmvt3rfom" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://xiaobocser.github.io/2018/01/05/hello-markdown/" data-id="cjc1r0vmw00023zobw3zll0vp" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -675,20 +675,20 @@
     </div>
 
     
-        
+        <% if (site.posts.length) { %>
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">links</h3>
+        <h3 class="widget-title"><%= __('widget.links') %></h3>
         <div class="widget">
             <ul>
-                
+                <% for (var i in theme.miscellaneous.links) { %>
                     <li>
-					    <a href="http://hexo.io" target="_blank">Hexo</a>
+                        <a href="<%- theme.miscellaneous.links[i] %>"><%= i %></a>
                     </li>
-                
+                <% } %>
             </ul>
         </div>
     </div>
-
+<% } %>
 
     
     <div id="toTop" class="fa fa-angle-up"></div>
