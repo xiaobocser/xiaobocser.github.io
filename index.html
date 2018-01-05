@@ -260,7 +260,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2018/01/05/hello-world/" data-id="cjc1j756x0000ntobzp24yp2y" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/01/05/hello-world/" data-id="cjc1jyibf0000wsobwo6p7pws" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -465,7 +465,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2018/01/05/hello-markdown/" data-id="cjc1j75740002ntobhm3823y6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/01/05/hello-markdown/" data-id="cjc1jyibn0002wsobtv1wjzg7" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -564,20 +564,20 @@
     
         
     
-        
+        <% if (site.posts.length) { %>
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">links</h3>
+        <h3 class="widget-title"><%= __('widget.links') %></h3>
         <div class="widget">
             <ul>
-                
+                <% for (var i in theme.miscellaneous.links) { %>
                     <li>
-                        <a href="http://hexo.io" target="_blank">Hexo</a>
+                        <a href="<%- theme.miscellaneous.links[i] %>"><%= i %></a>
                     </li>
-                
+                <% } %>
             </ul>
         </div>
     </div>
-
+<% } %>
 
     
     <div id="toTop" class="fa fa-angle-up"></div>
