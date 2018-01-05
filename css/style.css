@@ -170,7 +170,7 @@ code {
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
-  background-image: url("images/whale.png");
+  background-image: url("images/bear.png");
   -webkit-background-size: 40px 40px;
   -moz-background-size: 40px 40px;
   background-size: 40px 40px;
@@ -191,10 +191,7 @@ code {
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
   #main {
-    display: inline;
-    float: left;
-    width: 67.6923076923077%;
-    margin: 0 0.769230769230769%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 799px) {
@@ -952,45 +949,37 @@ a.article-title:hover {
 .article-entry blockquote {
   position: static;
   font-family: Georgia, "Times New Roman", "Microsoft Yahei", serif;
-  font-size: 1.1em;
-  margin: 0 -20px;
-  padding: 10px 20px 10px 54px;
+  font-size: 1em;
+  margin: 0 0 1.3em 0;
+  padding: 6px;
   background: #fcfcfc;
-  border-left: 4px solid #eee;
+  border-left: 5px solid #ef9024;
 }
-.article-entry blockquote:before {
-  top: 20px;
-  left: 10px;
-  content: "\f10d";
-  color: #e2e2e2;
-  font-size: 32px;
-  font-family: FontAwesome;
-  text-align: center;
-  position: static;
+border-top: 1px solid $grey-light {
+  border-bottom: 1px solid $grey-light;
+  border-right: 1px solid $grey-light;
 }
-.article-entry blockquote footer {
-  font-size: 14px;
-  margin: 1.6em 0;
-  font-family: "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+border-top: 1px solid $grey-light cite::before {
+  content: "-";
+  padding: 0 5px;
 }
-.article-entry blockquote footer cite:before {
-  content: "—";
-  padding: 0 0.5em;
+blockquote p {
+  margin: 5px;
 }
-.article-entry .pullquote {
+.pullquote {
   text-align: left;
   width: 45%;
   margin: 0;
 }
-.article-entry .pullquote.left {
+.pullquote.left {
   margin-left: 0.5em;
   margin-right: 1em;
 }
-.article-entry .pullquote.right {
+.pullquote.right {
   margin-right: 0.5em;
   margin-left: 1em;
 }
-.article-entry .caption {
+.caption {
   color: #999;
   display: block;
   font-size: 0.9em;
@@ -998,15 +987,15 @@ a.article-title:hover {
   position: relative;
   text-align: center;
 }
-.article-entry .video-container {
+.video-container {
   position: relative;
   padding-top: 56.25%;
   height: 0;
   overflow: hidden;
 }
-.article-entry .video-container iframe,
-.article-entry .video-container object,
-.article-entry .video-container embed {
+.video-container iframe,
+.video-container object,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -1360,6 +1349,10 @@ ol.toc {
 }
 .lg-outer .lg-thumb-item {
   border-radius: 0 !important;
+}
+.img-shadow {
+  -webkit-box-shadow: 3px 2px 3px #ddd;
+  box-shadow: 3px 2px 3px #ddd;
 }
 #comments {
   padding: 20px;
@@ -2116,12 +2109,12 @@ ol.toc {
   border: none;
 }
 .highlight table td.code {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 .highlight .gutter pre {
   color: #666;
   text-align: right;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 .article-entry .highlight {
   margin: 1.6em 0;
